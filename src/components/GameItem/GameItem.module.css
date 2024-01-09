@@ -18,4 +18,29 @@
   color: white;
   text-align: center;
   padding: 2px;
+  position: sticky;
+  z-index: 4;
+}
+
+.overlay {
+  display: none;
+  background-color: #373737;
+  color: white;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.5;
+  width: 260px;
+  height: 154px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+@media (min-width: 1024px) {
+  .gameItem:hover > .overlay {
+    display: flex;
+  }
 }

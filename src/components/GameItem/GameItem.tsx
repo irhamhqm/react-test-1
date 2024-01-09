@@ -30,6 +30,10 @@ export default function GameItem({ data }: GameItemProps) {
         src={`https://${data.image}`}
         alt={data.name}
       />
+      <div className={styles.overlay}>
+        <div>{data.name}</div>
+        <div>Play</div>
+      </div>
     </div>
   );
 }
