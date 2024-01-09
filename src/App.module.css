@@ -1,0 +1,6 @@
+.outlet {
+  display: flex;
+  justify-content: center;
+  margin: 7rem auto 0;
+  width: 100%;
+}

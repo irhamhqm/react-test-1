@@ -1,0 +1,14 @@
+.gameItem {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 260px;
+  height: 154px;
+  position: relative;
+  background-color: #373737;
+}
+
+.gameItem:hover {
+  transform: rotate(10deg);
+  transform: scale(1.05);
+  transition: all 0.5s;
+}

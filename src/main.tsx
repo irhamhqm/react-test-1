@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./index.css";
 import ErrorPage from "./pages/error-page";
 import GamesPage from "./pages/games-page";
@@ -14,11 +15,6 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "top-games",
-        element: <GamesPage />,
-        index: true,
-      },
-      {
         path: ":category",
         element: <GamesPage />,
       },
@@ -26,8 +22,11 @@ const router = createBrowserRouter([
   },
 ]);
 
+const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
   </React.StrictMode>
 );
