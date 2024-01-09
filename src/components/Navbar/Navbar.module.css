@@ -1,0 +1,47 @@
+.nav {
+  background-color: #373737;
+  color: rgba(255, 255, 255, 0.87);
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.space {
+  background-color: black;
+  height: 0.75rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 1rem; */
+  font-size: 1.25rem;
+}
+
+.navItems {
+  padding: 1rem;
+  color: #ffffff;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.navItemsActive {
+  padding: 1rem;
+  color: #ffffff;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  background-color: #8dc63f;
+}
+
+.navItemsPending {
+  padding: 1rem;
+  color: #ffffff;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
