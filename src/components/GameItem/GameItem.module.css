@@ -12,3 +12,10 @@
   transform: scale(1.05);
   transition: all 0.5s;
 }
+
+.jackpotAmount {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 2px;
+}

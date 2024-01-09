@@ -22,7 +22,9 @@ export default function GameItem({ data }: GameItemProps) {
     >
       {isTop && <TopRibbon />}
       {isNew && <NewRibbon />}
-      <div>{data.amount}</div>
+      {data.amount && (
+        <div className={styles.jackpotAmount}>&#163;{data.amount}</div>
+      )}
       <img
         className={styles.gameImage}
         src={`https://${data.image}`}

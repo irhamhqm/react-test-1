@@ -24,7 +24,7 @@
 .navItems {
   padding: 1rem;
   color: #ffffff;
-  display: block;
+  display: none;
   height: 100%;
   text-decoration: none;
 }
@@ -32,7 +32,7 @@
 .navItemsActive {
   padding: 1rem;
   color: #ffffff;
-  display: block;
+  display: none;
   height: 100%;
   text-decoration: none;
   background-color: #8dc63f;
@@ -41,7 +41,66 @@
 .navItemsPending {
   padding: 1rem;
   color: #ffffff;
-  display: block;
+  display: none;
   height: 100%;
   text-decoration: none;
+}
+
+.button {
+  padding: 1rem;
+  display: block;
+  margin-left: auto;
+  height: 100%;
+  width: 3rem;
+}
+
+.dropdown {
+  display: block;
+}
+
+.dropdownItem {
+  display: block;
+  padding: 1rem;
+  color: #ffffff;
+  height: 100%;
+  text-decoration: none;
+}
+
+.dropdownItemActive {
+  display: block;
+  padding: 1rem;
+  color: #ffffff;
+  height: 100%;
+  text-decoration: none;
+  background-color: #8dc63f;
+}
+.dropdownItemPending {
+  display: block;
+  padding: 1rem;
+  color: #ffffff;
+  height: 100%;
+  text-decoration: none;
+}
+
+/* .button:active,
+.button:focus {
+  background-color: #8dc63f;
+} */
+
+@media (min-width: 1024px) {
+  .navItems {
+    display: block;
+  }
+  .navItemsActive {
+    display: block;
+  }
+  .navItemsPending {
+    display: block;
+  }
+  .button {
+    display: none;
+  }
+  .dropdown {
+    display: none;
+  }
 }
